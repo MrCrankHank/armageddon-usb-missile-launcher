@@ -6,7 +6,6 @@ from PyQt4 import QtGui
 from armageddon import Armageddon
 from gui import Ui_mainWindow
 
-
 class ArmageddonByArrows(QtGui.QMainWindow):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
@@ -45,7 +44,8 @@ class ArmageddonByArrows(QtGui.QMainWindow):
     def fire_all(self):
         for x in range (0, 4):
             self.armageddon.send_cmd(self.armageddon.FIRE)
-            sleep(3)
+            # The missle launcher needs 3.1 seconds till it can fire again
+            sleep(3.1)
 
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
