@@ -1,4 +1,5 @@
 import sys
+from time import sleep
 from PyQt4 import QtCore
 from PyQt4 import QtGui
 
@@ -44,6 +45,7 @@ class ArmageddonByArrows(QtGui.QMainWindow):
     def fire_all(self):
         for x in range (0, 4):
             self.armageddon.send_cmd(self.armageddon.FIRE)
+            sleep(5)
 
 
 if __name__ == "__main__":
