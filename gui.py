@@ -40,6 +40,11 @@ class Ui_mainWindow(object):
         self.fireButton = QtGui.QPushButton(self.centralwidget)
         self.fireButton.setObjectName(_fromUtf8("fireButton"))
         self.gridLayout.addWidget(self.fireButton, 1, 1, 1, 1)
+
+        self.fireallButton = QtGui.QPushButton(self.centralwidget)
+        self.fireallButton.setObjectName(_fromUtf8("fireallButton"))
+        self.gridLayout.addWidget(self.fireallButton, 0, 0, 0, 0)
+
         self.rightButton = QtGui.QPushButton(self.centralwidget)
         self.rightButton.setObjectName(_fromUtf8("rightButton"))
         self.gridLayout.addWidget(self.rightButton, 1, 2, 1, 1)
