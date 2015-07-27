@@ -45,7 +45,7 @@ class ArmageddonByArrows(QtGui.QMainWindow):
     def fire_all(self):
         for x in range (0, 4):
             self.armageddon.send_cmd(self.armageddon.FIRE)
-            sleep(3.3)
+            sleep(3.2)
 
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
