@@ -21,6 +21,7 @@ class ArmageddonByArrows(QtGui.QMainWindow):
         QtCore.QObject.connect(self.ui.upButton, QtCore.SIGNAL("released()"), self.stop_movement)
         QtCore.QObject.connect(self.ui.downButton, QtCore.SIGNAL("released()"), self.stop_movement)
         QtCore.QObject.connect(self.ui.fireButton, QtCore.SIGNAL("clicked()"), self.fire)
+        QtCore.QObject.connect(self.ui.fireallButton, QtCore.SIGNAL("clicked()"), self.fire_all)
 
     def move_left(self):
         self.armageddon.send_cmd(self.armageddon.LEFT)
@@ -39,6 +40,10 @@ class ArmageddonByArrows(QtGui.QMainWindow):
 
     def fire(self):
         self.armageddon.send_cmd(self.armageddon.FIRE)
+
+    def fire_all(self):
+        for x in range (0, 4):
+            self.armageddon.send_cmd(self.armageddon.FIRE)
 
 
 if __name__ == "__main__":

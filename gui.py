@@ -66,4 +66,6 @@ class Ui_mainWindow(object):
         self.rightButton.setShortcut(_translate("mainWindow", "Right", None))
         self.downButton.setText(_translate("mainWindow", "Down", None))
         self.downButton.setShortcut(_translate("mainWindow", "Down", None))
+        self.fireallButton.setText(_translate("mainWindow", "Fire all", None))
+        self.fireallButton.setShortcut(_translate("mainWindow", "Fire all", None))
 
