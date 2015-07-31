@@ -11,3 +11,5 @@ Applications for USB missile launchers
 The code was tested with Dream Cheeky USB Missile Launcher.
 
 Check also: https://github.com/codedance/Retaliation
+
+This fork adds a "Fireall" button
